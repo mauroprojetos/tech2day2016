@@ -31,6 +31,7 @@ module.exports.policies = {
   'SessionController': {
     'create': ['isAdmin'],
     'find': true, // Public access
+    'findOne': true, // Public access
     'next': true  // Public access
   }
 };

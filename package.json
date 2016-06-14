@@ -1,8 +1,8 @@
 {
-  "name": "tech2Day2016-api",
+  "name": "tech2Day2016",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.1.0",
+  "description": "Interactive Cisco Spark Bot for the Tech2Day 2016 edition",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -31,8 +31,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/tech2Day2016-api.git"
+    "url": "git://github.com/ObjectIsAdvantag/tech2day2016.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "Stève Sfartz",
   "license": ""
 }

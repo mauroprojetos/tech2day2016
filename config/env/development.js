@@ -22,4 +22,5 @@ module.exports = {
     migrate: 'drop'
   }
 
+
 };

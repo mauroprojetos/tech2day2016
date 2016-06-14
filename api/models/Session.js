@@ -7,6 +7,7 @@
 
 module.exports = {
   autoPK:true,
+  schema:true,
 
   attributes: {
     id: {

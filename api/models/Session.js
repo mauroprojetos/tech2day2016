@@ -18,6 +18,11 @@ module.exports = {
       required: true
     },
 
+    url: {
+      type: 'url',
+      required: true
+    },
+
     description: {
       type: 'string',
       required: true
@@ -48,25 +53,31 @@ module.exports = {
       required: true,
     },
 
-    location: {
-      type: 'string',
-      required: true,
-    },
-
     category: { // hands-on, talk
       type: 'string',
       required: true,
     },
 
-    speaker: { 
+    location: {
+      type: 'string',
+      required: true,
+    },
+
+    location_url: {
       type: 'url',
       required: true,
     },
 
-    url: { 
+    speaker: { 
+      type: 'string',
+      required: true,
+    },
+
+    speaker_url: { 
       type: 'url',
       required: true,
     }
+
 
   }
 };

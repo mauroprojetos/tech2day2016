@@ -1,4 +1,4 @@
-# An interactive bot for the Tech2Day 2016 edition
+# An Interactive bot for the Tech2Day 2016 edition
 
 Call the +33756780106 (via Tropo self-service IVR - Interactive Voice Response) 
 - have the Tech2Day program interactively spoken to you (Tropo Speech To Text),
@@ -21,6 +21,9 @@ The Tech2Day interactive bot reads from the Tech2Day Sessions API,
 leverages the Cisco Spark and Tropo APIs,
 
 The bot is deployed on CleverCloud servers, and persists its Data into PostgreSQL.
+
+This repo contains the Sessions API, check release v0.1
+https://github.com/ObjectIsAdvantag/tech2day2016/releases
 
 
 # Want to learn more

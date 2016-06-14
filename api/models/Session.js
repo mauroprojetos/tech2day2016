@@ -6,14 +6,15 @@
  */
 
 module.exports = {
+  autoPK:true,
 
   attributes: {
-    title: {
+    id: {
       type: 'string',
-      required: true
+      primaryKey: true
     },
 
-    shortid: {
+    title: {
       type: 'string',
       required: true
     },
@@ -25,12 +26,15 @@ module.exports = {
 
     description: {
       type: 'string',
+      size: 2048,
       required: true
     },
 
     day: {
       type: 'string',
-       required: true
+      enum: ['mercredi', 'jeudi', 'vendredi'],
+      defaultsTo: 'mercredi',
+      required: true
     },
 
     begin: {
@@ -45,39 +49,48 @@ module.exports = {
 
     beginDate: {
       type: 'date',
-      required: true,
+      required: true
     },
 
     endDate: {
       type: 'date',
-      required: true,
+      required: true
     },
 
-    category: { // hands-on, talk
+    category: { 
       type: 'string',
-      required: true,
+      enum: ['hands-on', 'talk'],
+      defaultsTo: 'talk',
+      required: true
     },
 
     location: {
       type: 'string',
-      required: true,
+      required: true
     },
 
     location_url: {
       type: 'url',
-      required: true,
+      required: true
     },
 
     speaker: { 
       type: 'string',
-      required: true,
+      required: true
     },
 
     speaker_url: { 
       type: 'url',
-      required: true,
-    }
+      required: true
+    },
 
+    // Hide internal structure
+    toJSON: function () {
+      var obj = this.toObject();
+      delete obj.createdAt;
+      delete obj.updatedAt;
+      return obj;
+    }
 
   }
 };

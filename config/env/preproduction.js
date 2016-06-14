@@ -18,7 +18,8 @@ module.exports = {
    ***************************************************************************/
 
   models: {
-    connection: 'clevercloud'
+    connection: 'clevercloud',
+    migrate: 'alter'
   }
 
 };

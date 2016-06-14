@@ -19,7 +19,9 @@ module.exports = {
 
   models: {
     connection: 'clevercloud',
-    migrate: 'alter'
+    // DANGEROUS ZONE: comment to update production schema
+    // migrate: 'alter'
+    migrate: 'safe'
   }
 
 };

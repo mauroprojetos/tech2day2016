@@ -29,9 +29,9 @@ module.exports.policies = {
   '*': false, // secure by default
 
   'SessionController': {
-    'create': ['isAdmin'],
-    'find': true, // Public access
-    'findOne': true, // Public access
-    'next': true  // Public access
+    'create': ['is-admin','no-cache'],
+    'find': ['no-cache'], // Public access
+    'findOne': ['no-cache'], // Public access
+    'findNext': ['no-cache']  // Public access
   }
 };

@@ -46,4 +46,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  , 'GET /api/v1/sessions/next': 'SessionController.findNext'
+
+  
+
 };

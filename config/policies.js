@@ -29,9 +29,13 @@ module.exports.policies = {
   '*': false, // secure by default
 
   'SessionController': {
-    'create': ['is-admin','no-cache'],
+    'create': ['is-admin','no-cache'], // Admin only
     'find': ['no-cache'], // Public access
     'findOne': ['no-cache'], // Public access
     'findNext': ['no-cache']  // Public access
+  },
+
+  'SparkController': {
+    'onboard': ['is-admin', 'no-cache'] // Admin only
   }
 };

@@ -48,6 +48,7 @@ module.exports.routes = {
 
   , 'GET /api/v1/sessions/next': 'SessionController.findNext'
 
-  
+  , 'GET /api/v1/spark/onboard': 'SparkController.onboard'
+
 
 };

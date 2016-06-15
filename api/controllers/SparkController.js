@@ -26,7 +26,7 @@ module.exports = {
         sparky.membership.add(roomId, email, function (err, results) {
             if (err) {
                 if (err.toString()  === "Error: response code: 409") {
-                    return res.json(200, { success: "membership already in room " + email });
+                    return res.json(204, { success: "membership already in room " + email });
                 }
                 if (err.toString() === "Error: response code: 400") {
                     return res.json(400, { failed: "could not add membership for user: ", err: "invalid email", email:email });

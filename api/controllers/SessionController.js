@@ -9,7 +9,7 @@ module.exports = {
 	findNext: function (req, res) {
         var now = new Date(Date.now());
        
-        Session.find({ beginDate: { ">=" : now } }, function (err, found) {
+        Session.find({ beginDate: { ">=" : now }, sort: "beginDate ASC" }, function (err, found) {
             if (err) return res.json(500, { err: "could not retreive any sessions" });
 
             // Because we love being RESTfull-ish

@@ -49,12 +49,12 @@ module.exports = {
     },
 
     beginDate: {
-      type: 'date',
+      type: 'datetime',
       required: true
     },
 
     endDate: {
-      type: 'date',
+      type: 'datetime',
       required: true
     },
 
